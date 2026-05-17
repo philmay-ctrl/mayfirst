@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mayfirst — Test-Projekt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>mayfirst</h1>
+      <p>Ein kleines Test-Projekt — statisches HTML, CSS und JavaScript.</p>
+
+      <section class="counter" aria-labelledby="counter-heading">
+        <h2 id="counter-heading">Klick-Zähler</h2>
+        <p>
+          Aktueller Stand:
+          <output id="count" aria-live="polite">0</output>
+        </p>
+        <div class="actions">
+          <button type="button" id="increment">+1</button>
+          <button type="button" id="decrement">−1</button>
+          <button type="button" id="reset">Zurücksetzen</button>
+        </div>
+      </section>
+
+      <p class="time">Geladen am <time id="loaded-at"></time>.</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
